@@ -13,13 +13,13 @@
       theme: {
         extend: {
           colors: {
-            ink: '#0d0d0d',
-            panel: '#141414',
-            panel2: '#191919',
-            line: '#2a2a2a',
+            ink: '#0a0a12',
+            panel: '#12121c',
+            panel2: '#181824',
+            line: '#2a2a38',
             gold: { DEFAULT: '#d4af37', deep: '#b8860b' },
-            mute: '#9a9a9a',
-            mute2: '#6f6f6f',
+            mute: '#9a9aa6',
+            mute2: '#6f6f7c',
             lightgray: '#e6e6e6',
           },
           fontFamily: {
@@ -33,16 +33,16 @@
   <style type="text/tailwindcss">
     @layer base {
       html { scroll-behavior: smooth; }
-      body { background: #0d0d0d; color: #fff; font-family: 'Montserrat', system-ui, sans-serif; }
+      body { background: #0a0a12; color: #fff; font-family: 'Montserrat', system-ui, sans-serif; }
       ::selection { background: #d4af3740; color: #fff; }
       ::-webkit-scrollbar { width: 10px; height: 10px; }
-      ::-webkit-scrollbar-thumb { background: #d4af37; border: 2px solid #0d0d0d; border-radius: 999px; }
-      ::-webkit-scrollbar-track { background: #0d0d0d; }
+      ::-webkit-scrollbar-thumb { background: #d4af37; border: 2px solid #0a0a12; border-radius: 999px; }
+      ::-webkit-scrollbar-track { background: #0a0a12; }
     }
     @layer utilities {
       .label { font-family: 'Montserrat', sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.66rem; }
       .display { font-family: 'Playfair Display', serif; font-weight: 800; letter-spacing: -0.01em; line-height: 1; }
-      .card { background: #141414; border: 1px solid #2a2a2a; border-radius: 14px; }
+      .card { background: #12121c; border: 1px solid #2a2a38; border-radius: 14px; }
       .gold-text { background: linear-gradient(180deg, #f3d573 0%, #d4af37 45%, #b8860b 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
     }
     .hero-glow {
@@ -518,7 +518,7 @@
           vec2 uv = (gl_FragCoord.xy - 0.5 * iResolution.xy) / iResolution.y;
           vec3 ro = vec3(0.0, -1.0, 0.0);
           vec3 rd = normalize(vec3(uv, 1.0));
-          vec3 col = vec3(0.0);
+          vec3 col = vec3(0.039, 0.039, 0.071); // royal black base (#0a0a12)
           float t = 0.0;
 
           // RK Empires gold palette
