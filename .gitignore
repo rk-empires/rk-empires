@@ -1,0 +1,12 @@
+# Dev artifacts
+temporary screenshots/
+node_modules/
+
+# Local tooling / editor
+.claude/
+.DS_Store
+Thumbs.db
+*.log
+
+# Third-party reference screenshot (not an RK Empires asset)
+brand_assets/promo-tech-store.vercel.app_awwwards.png
